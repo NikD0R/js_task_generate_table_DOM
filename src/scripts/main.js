@@ -388,6 +388,8 @@ people.forEach((person) => {
 
   century.textContent = centuryPerson;
 
-  tr.append(nam, gender, born, died, age, century);
-  table.append(tr);
+  if (table) {
+    tr.append(nam, gender, born, died, age, century);
+    table.append(tr);
+  }
 });
